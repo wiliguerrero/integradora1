@@ -11,6 +11,7 @@ const {mongose} = require('./database');
 app.set('port', process.env.PORT || 3000);
 
 // Middlewares
+//Rolando
 app.use(cors({origin: 'http://localhost:4200'}));
 app.use(express.json());
 app.use(bodyParser.json());
