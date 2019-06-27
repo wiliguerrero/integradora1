@@ -17,6 +17,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import{ AuthGuard}from './auth/auth.guard';
 import { UserService } from './services/user.service';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { SolicitarInsigniaComponent } from './components/solicitar-insignia/solicitar-insignia.component';
 
 
 
@@ -28,7 +29,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     UserComponent,
     SignUpComponent,
     SignInComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SolicitarInsigniaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee2Service } from '../../services/solicitarInsignia.service';
+
+import { SolicitarInsigniaService } from '../../services/solicitar-insignia.service';
 import { NgForm  } from '@angular/forms';
 
-import { Employee2 } from '../../models/solicitarInsignia';
+import { Employee2 } from '../../models/solicitar-insignia';
 
 declare var M: any;
+
 @Component({
   selector: 'app-solicitar-insignia',
   templateUrl: './solicitar-insignia.component.html',
   styleUrls: ['./solicitar-insignia.component.css'],
-  providers: [ Employee2Service ]
+  providers: [ SolicitarInsigniaService ]
 })
 export class SolicitarInsigniaComponent implements OnInit {
-
   selected:string="";
   selected2:string="";
 
@@ -20,7 +21,7 @@ export class SolicitarInsigniaComponent implements OnInit {
   checkCampi:string="";
   checkExplo:string="";
 
-  constructor(private employeeService: Employee2Service) { }
+  constructor(private employeeService: SolicitarInsigniaService) { }
 
   ngOnInit() {
     this.getEmployees();

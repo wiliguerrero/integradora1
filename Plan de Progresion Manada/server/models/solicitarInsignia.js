@@ -18,5 +18,4 @@ const employeeSchema = new Schema({
         seccion:{ type:String,required: true}
 });
 
-module.exports = mongoose.model('SolicitarInsignia', employeeSchema);
-
+module.exports = mongoose.model('SolicitudInsignia', employeeSchema);
